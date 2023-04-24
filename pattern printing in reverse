@@ -8,3 +8,11 @@ for i in range(n):
     for j in range(2*(n-i)-1):
         print(chr(69- i), end='')
     print()
+
+output:
+
+EEEEEEEEE
+ DDDDDDD
+  CCCCC
+   BBB
+    A

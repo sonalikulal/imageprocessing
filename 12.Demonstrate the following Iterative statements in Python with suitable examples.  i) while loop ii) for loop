@@ -1,0 +1,20 @@
+WHILE LOOP
+count = 0
+while (count < 3):
+	count = count + 1
+	print("Hello Geek")
+
+OUTPUT:
+Hello Geek
+Hello Geek
+Hello Geek
+
+FOR LOOP
+for i in range(1,5):
+   print(i)
+   
+   OUTPUT:
+   1
+   2
+   3
+   4

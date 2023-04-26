@@ -1,0 +1,24 @@
+a = 5
+b = 6
+sum = a + b
+
+# id of sum variable
+print("The id of sum is", id(sum))
+OUTPUT:
+The id of sum is 2530179770992
+
+a = 10
+b = 10.5
+c = True
+d = 1 + 5j
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+
+OUTPUT:
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+<class 'complex'>

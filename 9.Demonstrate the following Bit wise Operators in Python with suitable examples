@@ -1,0 +1,76 @@
+# Python program to show
+# bitwise operators
+
+a = 10
+b = 4
+
+# Print bitwise AND operation
+print("a & b =", a & b)
+
+# Print bitwise OR operation
+print("a | b =", a | b)
+
+# Print bitwise NOT operation
+print("~a =", ~a)
+
+# print bitwise XOR operation
+print("a ^ b =", a ^ b)
+
+OUTPUT:
+a & b = 0
+a | b = 14
+~a = -11
+a ^ b = 14
+
+LOGICAL OPERATOR
+AND
+x = 10
+y = 20
+# Output: x and y is True 
+print('x and y is',x and y)
+
+OUTPUT:
+x and y is 20
+
+OR
+x = 10
+y = 20
+# Output: x or y is True
+print('x or y is',x or y)
+
+OUTPUT:
+x or y is 10
+
+NOT
+x = 10
+y = 20
+# Output: not x is False
+print('not x is',not x)
+
+OUTPUT:
+not x is False
+
+TERNARY OPERATOR
+a, b = 10, 20
+ 
+# Copy value of a in min if a < b else copy b
+min = a if a < b else b
+ 
+print(min)
+
+OUTPUT:
+10
+
+ASSIGNMENT OPERATOR
+a = 3
+b = 5
+  
+c = a + b
+  
+# Output
+print(c)
+
+OUTPUT:
+8
+
+

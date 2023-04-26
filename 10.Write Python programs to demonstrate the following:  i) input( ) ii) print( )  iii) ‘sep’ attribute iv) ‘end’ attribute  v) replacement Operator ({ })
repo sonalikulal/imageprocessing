@@ -1,0 +1,41 @@
+INPUT
+x=input('ENTER YOUR NAME')
+print('HELLO,'+x)
+
+OUTPUT:
+ENTER YOUR NAMEsonali
+HELLO,sonali
+
+PRINT
+# This program prints Hello, world!
+
+print('Hello, world!')
+
+OUTPUT:
+Hello, world!
+
+
+SEP
+#for formatting a date
+print('09','12','2016', sep='-')
+
+OUTPUT:
+09-12-2016
+
+END ATTRIBUTE
+# ends the output with a space
+print("Welcome to", end = ' ')
+print("Mangalore", end= ' ')
+
+OUTPUT:
+Welcome to Mangalore 
+
+REPLACEMENT OPERATOR
+text = 'bat ball'
+
+# replace 'ba' with 'ro'
+replaced_text = text.replace('ba', 'ro')
+print(replaced_text)
+
+OUTPUT:
+rot roll

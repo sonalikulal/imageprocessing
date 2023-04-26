@@ -1,0 +1,33 @@
+BREAK
+for letter in 'geeksforgeeks':
+
+	if letter == 'e' or letter == 's':
+		break
+print('Current Letter :', letter)
+
+OUTPUT:
+Current Letter : e
+
+CONTINUE:
+for letter in 'geeksforgeeks':
+	if letter == 'e' or letter == 's':
+		continue
+	print('Current Letter :', letter)
+
+
+OUTPUT:
+Current Letter : g
+Current Letter : k
+Current Letter : f
+Current Letter : o
+Current Letter : r
+Current Letter : g
+Current Letter : k
+
+PASS:
+for letter in 'geeksforgeeks':
+	pass
+print('Last Letter :', letter)
+
+OUTPUT:
+Last Letter : s

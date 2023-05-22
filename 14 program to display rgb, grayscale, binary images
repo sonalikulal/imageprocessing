@@ -1,0 +1,49 @@
+BINARY
+
+import cv2
+
+# read the image file
+img = cv2.imread('C:/Users/User/Downloads/cat.jpg', 0)
+
+ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+
+cv2.imshow("Binary", bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+grayscale
+
+# import opencv
+import cv2
+
+# Load the input image
+image = cv2.imread('C:/Users/User/Downloads/imageprocessing04/fruit.jpg')
+cv2.imshow('Original', image)
+cv2.waitKey(0)
+
+# Use the cvtColor() function to grayscale the image
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+cv2.imshow('Grayscale', gray_image)
+cv2.waitKey(0)
+
+# Window shown waits for any key pressing event
+cv2.destroyAllWindows()
+
+rgb
+from PIL import Image
+import matplotlib.pyplot as plt
+im=Image.open("flwr.jpg")
+pl=im.histogram()
+plt.bar(range(256),pl[:256],color='r',alpha=0.5)
+plt.bar(range(256),pl[256:2*256],color='g',alpha=0.4)
+plt.bar(range(256),pl[2*256],color='b',alpha=0.3)
+plt.show()
+
+rgb-blue
+import cv2
+image=cv2.imread("C:/Users/User/Downloads/cat.jpg")
+image_rgb=cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
+cv2.imshow('image',image_rgb)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

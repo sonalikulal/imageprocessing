@@ -1,0 +1,37 @@
+import os 
+path='C:/Users/User/Downloads/images'
+list=os.listdir(path)
+print("files and directories in'",path,"':")
+print(list)
+
+output:
+files and directories in' C:/Users/User/Downloads/images ':
+['cat2.jpg', 'flower1.jpg', 'flwr.jpg', 'i2.png', 'tom.jpg']
+
+
+
+List out only jpg files in the folder
+# import the modules
+import os
+from os import listdir
+
+# get the path/directory
+folder_dir = "C:/Users/User/Downloads"
+for images in os.listdir(folder_dir):
+
+	# check if the image ends with png
+	if (images.endswith(".jpg")):
+		print(images)
+
+output:
+cat.jpg
+cat2.jpg
+face.jpg
+flower1.jpg
+flwr.jpg
+i1-ImResizer.jpg
+literature documents_3.jpg
+nature.jpg
+new.jpg
+tom.jpg
+

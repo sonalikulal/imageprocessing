@@ -1,0 +1,12 @@
+from PIL import Image
+Original_Image = Image.open("./flwr.jpg")
+rotated_image1 = Original_Image.rotate(180)
+rotated_image2 = Original_Image.transpose(Image.ROTATE_90)
+rotated_image3 = Original_Image.rotate(90)
+rotated_image4 = Original_Image.rotate(-45)
+rotated_image5 = Original_Image.rotate(-270)
+rotated_image1.show()
+rotated_image2.show()
+rotated_image3.show()
+rotated_image4.show()
+rotated_image5.show()

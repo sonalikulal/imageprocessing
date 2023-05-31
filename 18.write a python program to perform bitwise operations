@@ -1,0 +1,23 @@
+XOR
+
+from PIL import Image,ImageChops
+im1=Image.open(r"C:\Users\User\Downloads\sun.jpg").convert("1")
+im2=Image.open(r"C:\Users\User\Downloads\moon.jpg").convert("1")
+im3=ImageChops.logical_xor(im1,im2)
+im3.show()
+
+AND
+
+from PIL import Image,ImageChops
+im1=Image.open(r"C:\Users\User\Downloads\sun.jpg").convert("1")
+im2=Image.open(r"C:\Users\User\Downloads\moon.jpg").convert("1")
+im3=ImageChops.logical_and(im1,im2)
+im3.show()
+
+OR
+
+from PIL import Image,ImageChops
+im1=Image.open(r"C:\Users\User\Downloads\sun.jpg").convert("1")
+im2=Image.open(r"C:\Users\User\Downloads\moon.jpg").convert("1")
+im3=ImageChops.logical_or(im1,im2)
+im3.show()

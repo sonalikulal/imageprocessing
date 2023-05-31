@@ -1,0 +1,28 @@
+#UPSAMPLING
+
+import cv2
+image=cv2.imread("C:/Users/User/Downloads/avocado.jpg")
+print("size of image before pyrUp:",image.shape)
+cv2.imshow("im1",image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+image=cv2.pyrUp(image)
+print("size of image after pyrUp:",image.shape)
+cv2.imshow('UpSample',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+#DOWNSAMPLING
+
+import cv2
+image=cv2.imread("C:/Users/User/Downloads/avocado.jpg")
+print("size of image before pyrUp:",image.shape)
+cv2.imshow("im1",image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+image=cv2.pyrDown(image)
+print("size of image after pyrUp:",image.shape)
+cv2.imshow('UpSample',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

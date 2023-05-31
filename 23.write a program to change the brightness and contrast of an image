@@ -1,0 +1,23 @@
+#CONTRAST
+
+import cv2
+
+im1=cv2.imread("C:/Users/User/Downloads/sun.jpg",1)
+im2=cv2.imread("C:/Users/User/Downloads/moon2.jpg",1)
+
+im=cv2.addWeighted(im1,1,im1,3,0)
+cv2.imshow("im",im)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#BRIGHTNESS
+
+import cv2
+
+im1=cv2.imread("C:/Users/User/Downloads/sun.jpg",1)
+im2=cv2.imread("C:/Users/User/Downloads/moon2.jpg",1)
+
+im=cv2.addWeighted(im1,0.5,im1,0.2,0)
+cv2.imshow("im",im)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

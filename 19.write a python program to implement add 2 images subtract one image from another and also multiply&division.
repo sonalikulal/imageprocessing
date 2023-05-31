@@ -1,0 +1,24 @@
+ADD
+
+from PIL import Image,ImageChops
+im1=Image.open(r"C:\Users\User\Downloads\sun.jpg")
+im2=Image.open(r"C:\Users\User\Downloads\moon.jpg")
+im3=ImageChops.add(im1,im2,scale=1.0,offset=2)
+im3.show()
+
+SUBTRACT
+
+from PIL import Image,ImageChops
+im1=Image.open(r"C:\Users\User\Downloads\sun.jpg")
+im2=Image.open(r"C:\Users\User\Downloads\moon.jpg")
+im3=ImageChops.subtract(image1=im1,image2=im2)
+im3.show()
+
+MULTIPLY
+
+from PIL import Image,ImageChops
+im1=Image.open(r"C:\Users\User\Downloads\sun.jpg")
+im2=Image.open(r"C:\Users\User\Downloads\moon.jpg")
+im3=ImageChops.multiply(im1,im2)
+im3.show()
+

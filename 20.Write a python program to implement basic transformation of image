@@ -1,0 +1,46 @@
+CROP
+
+from PIL import Image
+im = Image.open(r"C:\Users\User\Downloads\sun.jpg")
+width, height = im.size
+left = 5
+top = height / 4
+right = 164
+bottom = 3 * height / 4
+im1 = im.crop((left, top, right, bottom))
+im1.show()
+
+
+NEW
+
+import PIL
+im = PIL.Image.new(mode="RGB", size=(200, 100))
+im.show()
+
+
+
+SPLIT
+
+from PIL import Image
+im = Image.open(r"C:\Users\User\Downloads\moon.jpg")
+im1 = Image.Image.split(im)
+im1[0].show()
+im1[1].show()
+im1[2].show()
+
+
+SAVE
+
+from PIL import Image
+import PIL
+im1 = Image.open(r"C:\Users\User\Downloads\moon.jpg")
+im1 = im1.save("sonali.jpg")
+
+
+QUANTIZE
+
+from PIL import Image
+import PIL
+im1=Image.open(r"C:\Users\User\Downloads\sun.jpg")
+im1=im1.quantize(256)
+im1.show()
